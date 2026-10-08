@@ -225,6 +225,8 @@ h3, .h3 { font-size: 21px; line-height: 28px; font-weight: 600; margin: 0; }
 .chip[aria-pressed="true"] { background: var(--azul-ycdi); border-color: var(--azul-ycdi); color: #fff; }
 .chip small { font-weight: 500; opacity: .7; margin-left: 4px; }
 
+[hidden] { display: none !important; }
+
 /* Sample-data banner */
 .sample-note { display: flex; gap: 12px; align-items: flex-start; border-left: 3px solid var(--oro); background: #fff; padding: 12px 16px; font-size: 13px; color: var(--tinta-suave); }
 .sample-note strong { color: var(--tinta); }

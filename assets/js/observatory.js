@@ -86,6 +86,10 @@
     svg.transition().duration(750).call(zoom.transform, t);
   }
 
+  const SOON = (title, text) => `<div class="soon"><span class="soon__badge">Coming soon</span><h4>${title}</h4><p>${text}</p></div>`;
+  const SOON_COUNTRY = "Indicators on democracy and youth political participation for this country will be available soon.";
+  const SOON_ARTICLES = "Opinion articles by YCDI members will be available soon.";
+
   /* ---------- Tooltip ---------- */
   const tip = () => document.getElementById("tip");
   function showTip(ev, f) {
@@ -99,8 +103,10 @@
         <dt>Regime type</dt><dd>${esc(p.democracy?.category ?? "—")}</dd>
         <dt>MPs under 40</dt><dd>${pct(p.youth?.mps_under_40_pct)}</dd>
         <dt>Articles</dt><dd>${arts.length}</dd>
-      </dl>` : `<dl><dt>Country profile</dt><dd>No data yet</dd><dt>Articles</dt><dd>${arts.length}</dd></dl>`}
-      <div class="tip__cta">Click to open the country profile${p && p.sample ? " · example data" : ""}</div>`;
+      </dl>
+      <div class="tip__cta">Click to open the country profile</div>` : (arts.length
+        ? `<dl><dt>Articles</dt><dd>${arts.length}</dd></dl><div class="tip__cta">Click to read the articles</div>`
+        : `<div class="tip__soon">Information coming soon</div>`)}`;
     const pad = 18, r = el.getBoundingClientRect();
     let x = ev.clientX + pad, y = ev.clientY + pad;
     if (x + r.width > innerWidth - 8) x = ev.clientX - r.width - pad;
@@ -118,22 +124,20 @@
   }
 
   function panelIntro() {
-    const nProfiles = Object.keys(profiles).length;
-    const nCountriesArt = [...artsBy.keys()].length;
+    const hasData = Object.keys(profiles).length || articles.length;
     document.getElementById("panel").innerHTML = `
       <div class="panel__head"><span class="tag">Overview</span><h3 style="margin-top:8px">Democracy and youth, country by country</h3></div>
       <div class="panel__body panel__intro">
-        <p class="panel__empty">Hover over a country for a quick summary, or select it to see its full profile and the articles written about it.</p>
+        <p class="panel__empty">Hover over a country or select it to explore its profile.</p>
+        ${hasData ? `
         <div class="kpis">
-          <div class="kpi"><b>${nProfiles}</b><span>Country profiles</span></div>
+          <div class="kpi"><b>${Object.keys(profiles).length}</b><span>Country profiles</span></div>
           <div class="kpi"><b>${articles.length}</b><span>Articles published</span></div>
-          <div class="kpi"><b>${nCountriesArt}</b><span>Countries covered by articles</span></div>
-          <div class="kpi"><b>${features.length}</b><span>Countries and territories on the map</span></div>
         </div>
         <div class="panel__sec" style="margin-top:12px">
           <h4>Latest articles</h4>
-          ${articles.length ? articles.slice(0, 3).map(articleLink).join("") : '<p class="panel__empty">No articles yet.</p>'}
-        </div>
+          ${articles.length ? articles.slice(0, 3).map(articleLink).join("") : `<p class="panel__empty">${SOON_ARTICLES}</p>`}
+        </div>` : SOON("The Observatory is being prepared", "Country profiles with indicators on democracy and youth political participation, together with opinion articles by YCDI members, will be available soon.")}
       </div>`;
   }
 
@@ -170,9 +174,11 @@
         ${p.elections?.length ? `<div class="panel__sec"><h4>Upcoming elections</h4><ul class="plain">${p.elections.map(e => `<li><strong>${esc(e.type)}</strong> · ${esc(fmtDate(e.date))}</li>`).join("")}</ul></div>` : ""}
         ${p.members?.length ? `<div class="panel__sec"><h4>YCDI / IDC-CDI members</h4><ul class="plain">${p.members.map(m => `<li>${esc(m.party)}${m.youth_wing ? ` · <span style="color:var(--tinta-suave)">${esc(m.youth_wing)}</span>` : ""}</li>`).join("")}</ul></div>` : ""}`;
     } else {
-      body += `<div class="panel__sec"><p class="panel__empty">There is no country profile for ${esc(name)} yet. Indicators will be added as the Observatory grows.</p></div>`;
+      body += SOON("Country profile", SOON_COUNTRY);
     }
-    body += `<div class="panel__sec"><h4>Articles (${arts.length})</h4>${arts.length ? arts.map(articleLink).join("") : `<p class="panel__empty">No articles about ${esc(name)} yet. <a href="#" data-submit>Write the first one</a>.</p>`}</div>`;
+    body += arts.length
+      ? `<div class="panel__sec"><h4>Articles (${arts.length})</h4>${arts.map(articleLink).join("")}</div>`
+      : `<div class="panel__sec"><h4>Opinion articles</h4><p class="panel__empty">${SOON_ARTICLES}</p></div>`;
 
     document.getElementById("panel").innerHTML = `
       <div class="panel__head">
@@ -225,7 +231,7 @@
   function renderArticles() {
     const grid = document.getElementById("art-grid"), chips = document.getElementById("topic-chips");
     if (!articles.length) {
-      grid.innerHTML = `<div class="art-empty" style="grid-column:1/-1"><h3 style="margin-bottom:8px">No articles yet</h3><p class="panel__empty">The first contributions from our members will appear here.</p></div>`;
+      grid.innerHTML = `<div class="art-empty" style="grid-column:1/-1"><span class="soon__badge">Coming soon</span><h3 style="margin:14px 0 8px">Opinion articles will be available soon</h3><p class="panel__empty">Analysis and opinion pieces by the young leaders of YCDI member parties will be published here.</p></div>`;
       return;
     }
     const topics = ["All", ...new Set(articles.map(a => a.topic).filter(Boolean))];
@@ -257,7 +263,7 @@
       { t: "Member articles", d: "Signed opinion and analysis by young leaders of YCDI member parties. Authors' views do not necessarily reflect the official position of the YCDI." }
     ];
     document.getElementById("method").innerHTML = blocks.map(b => `<div class="reveal"><h3>${b.t}</h3><p>${b.d}</p></div>`).join("") +
-      `<div class="reveal"><h3>Sources</h3>${(sources || []).map(s => `<p style="margin:0 0 8px"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></p>`).join("")}</div>`;
+      `<div class="reveal method__sources"><h3>Sources</h3><div>${(sources || []).map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join("")}</div></div>`;
     YCDI.initReveal();
   }
 
@@ -271,7 +277,7 @@
       profiles = cData.countries || {};
       articles = (aData.articles || []).sort((a, b) => String(b.date).localeCompare(String(a.date)));
       articles.forEach(a => (a.countries || []).forEach(c => { if (!artsBy.has(c)) artsBy.set(c, []); artsBy.get(c).push(a); }));
-      document.getElementById("sample-note").hidden = !Object.values(profiles).some(p => p.sample);
+      document.querySelector(".legend").hidden = !Object.keys(profiles).length && !articles.length;
       drawMap(world);
       initSearch();
       renderArticles();

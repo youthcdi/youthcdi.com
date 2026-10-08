@@ -138,3 +138,14 @@
 .prose img { margin: 32px 0; }
 .prose em:last-child { color: var(--tinta-suave); font-size: 16px; }
 .article-foot { max-width: 70ch; margin: 56px auto 0; padding-top: 24px; border-top: var(--filete) solid var(--azul-medio); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+
+/* Coming soon notices */
+.soon { margin-top: 20px; padding: 24px; background: var(--superficie-alt); border-left: 3px solid var(--azul-ycdi); }
+.soon h4 { margin: 12px 0 8px; font-size: 19px; line-height: 1.3; font-weight: 700; color: var(--azul-profundo); letter-spacing: 0; text-transform: none; }
+.soon p { margin: 0; font-size: 15px; color: var(--tinta-suave); }
+.soon__badge { display: inline-block; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: #fff; background: var(--azul-ycdi); padding: 4px 10px; }
+.tip__soon { margin-top: 10px; font-size: 13px; font-weight: 600; color: var(--azul-medio); }
+.legend[hidden] { display: none; }
+.stage__bar:has(.legend[hidden]) { justify-content: flex-end; }
+.method__sources { grid-column: 1 / -1; }
+.method__sources > div { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px 32px; }

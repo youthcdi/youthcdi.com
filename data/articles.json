@@ -1,37 +1,4 @@
 {
-  "_help": "Index of Observatory articles, newest first. Each article's text lives in observatory/articles/<slug>.md. 'countries' uses ISO alpha-3 codes so the article shows up on the map. Delete the sample entries (and their .md files) when real articles arrive.",
-  "articles": [
-    {
-      "slug": "sample-youth-participation-latin-america",
-      "title": "Why young people are missing from Latin America's parliaments",
-      "author": "Author name",
-      "party": "Member party",
-      "country_of_author": "Colombia",
-      "date": "2026-10-01",
-      "countries": [
-        "COL",
-        "PAN",
-        "MEX"
-      ],
-      "topic": "Youth participation",
-      "summary": "Example article. A short summary of two or three lines that appears on cards and in the country panel.",
-      "image": "",
-      "sample": true
-    },
-    {
-      "slug": "sample-democracy-venezuela",
-      "title": "Venezuela: what the democratic transition needs from the next generation",
-      "author": "Author name",
-      "party": "Member party",
-      "country_of_author": "Spain",
-      "date": "2026-09-15",
-      "countries": [
-        "VEN"
-      ],
-      "topic": "Elections",
-      "summary": "Example article. Replace with the summary of a real piece by a YCDI member.",
-      "image": "",
-      "sample": true
-    }
-  ]
+  "_help": "Index of Observatory articles, newest first. Each article's text lives in observatory/articles/<slug>.md. 'countries' uses ISO alpha-3 codes so the article shows up on the map. Fields: slug, title, author, party, country_of_author, date (YYYY-MM-DD), countries, topic, summary, image.",
+  "articles": []
 }

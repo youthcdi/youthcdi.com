@@ -37,17 +37,30 @@
 
   async function renderBoard() {
     const box = document.getElementById("board-grid");
-    try {
-      const { members } = await getJSON("data/board.json");
-      box.innerHTML = members.map((m, i) => `
-        <article class="member reveal${i < 2 ? " member--lead" : ""}" style="--d:${(i % 4) * 0.06}s">
+    const card = (m, i, lead) => `
+        <article class="member reveal${lead ? " member--lead" : ""}" style="--d:${(i % 4) * 0.06}s">
           <div class="member__photo">
             ${m.photo ? `<img src="assets/img/board/${esc(m.photo)}" alt="${esc(m.name)}" loading="lazy">` : `<span class="member__initials" aria-hidden="true">${esc(initials(m.name))}</span>`}
           </div>
           <h3>${esc(m.name)}</h3>
           <div class="member__role">${esc(m.role)}</div>
           <div class="member__country">${esc(m.country)}</div>
-        </article>`).join("");
+        </article>`;
+    try {
+      const { members } = await getJSON("data/board.json");
+      const isLead = m => !/vice/i.test(m.role);
+      const leads = members.filter(isLead), vps = members.filter(m => !isLead(m));
+      const order = [...new Set(vps.map(m => m.continent || "Other"))];
+      box.innerHTML = `
+        <div class="board-group">
+          <div class="board-group__label">Presidency</div>
+          <div class="board board--lead">${leads.map((m, i) => card(m, i, true)).join("")}</div>
+        </div>
+        ${order.map(c => `
+        <div class="board-group">
+          <div class="board-group__label">Vice-Presidents · ${esc(c)}</div>
+          <div class="board">${vps.filter(m => (m.continent || "Other") === c).map((m, i) => card(m, i, false)).join("")}</div>
+        </div>`).join("")}`;
     } catch (err) { box.innerHTML = `<p class="leyenda">Board could not be loaded.</p>`; console.error(err); }
   }
 

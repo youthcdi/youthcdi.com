@@ -1,18 +1,96 @@
 {
-  "_help": "Board of the YCDI. To add a photo, upload a square image (min. 600x600 px) to assets/img/board/ and write its file name in \"photo\". Order in this list = order on the page.",
+  "_help": "Board of the YCDI. Order in this list = order on the page; President and Secretary General are shown first, Vice-Presidents are grouped by continent. To add a photo, upload a square image (min. 600x600 px) to assets/img/board/ and write its file name in \"photo\".",
   "members": [
-    { "name": "Carlo Angrisano",   "role": "President",           "country": "Spain",      "photo": "" },
-    { "name": "Carlos Holguín",    "role": "Secretary General",   "country": "Colombia",   "photo": "" },
-    { "name": "Zala Tomašič",      "role": "Vice President",      "country": "Slovakia",   "photo": "" },
-    { "name": "Michael Dust",      "role": "Vice President",      "country": "Germany",    "photo": "" },
-    { "name": "Marwa El Ansari",   "role": "Vice President",      "country": "Morocco",    "photo": "" },
-    { "name": "Sok Soken",         "role": "Vice President",      "country": "Cambodia",   "photo": "" },
-    { "name": "Lohannyz Gaitán",   "role": "Vice President",      "country": "Panama",     "photo": "" },
-    { "name": "Manuel da Costa",   "role": "Vice President",      "country": "Angola",     "photo": "" },
-    { "name": "Barbara Hegedűs",   "role": "Vice President",      "country": "Hungary",    "photo": "" },
-    { "name": "Lorenzo Bugli",     "role": "Vice President",      "country": "San Marino", "photo": "" },
-    { "name": "Anggia Ermarini",   "role": "Vice President",      "country": "Indonesia",  "photo": "" },
-    { "name": "Vander Gomes",      "role": "Vice President",      "country": "Cabo Verde", "photo": "" },
-    { "name": "Name to be confirmed", "role": "Vice President",   "country": "Mexico",     "photo": "" }
+    {
+      "name": "Lorenzo Bugli",
+      "role": "President",
+      "country": "San Marino",
+      "continent": "Europe",
+      "photo": ""
+    },
+    {
+      "name": "Carlos Holguín",
+      "role": "Secretary General",
+      "country": "Colombia",
+      "continent": "America",
+      "photo": ""
+    },
+    {
+      "name": "Johannes Volkmann",
+      "role": "Vice-President",
+      "country": "Germany",
+      "continent": "Europe",
+      "photo": ""
+    },
+    {
+      "name": "Gonzalo Gómez",
+      "role": "Vice-President",
+      "country": "Spain",
+      "continent": "Europe",
+      "photo": ""
+    },
+    {
+      "name": "Matilde Pacheco",
+      "role": "Vice-President",
+      "country": "Portugal",
+      "continent": "Europe",
+      "photo": ""
+    },
+    {
+      "name": "Jesús Pilieri",
+      "role": "Vice-President",
+      "country": "Venezuela",
+      "continent": "America",
+      "photo": ""
+    },
+    {
+      "name": "Pilar Brown",
+      "role": "Vice-President",
+      "country": "Argentina",
+      "continent": "America",
+      "photo": ""
+    },
+    {
+      "name": "Daniela Aguilar",
+      "role": "Vice-President",
+      "country": "México",
+      "continent": "America",
+      "photo": ""
+    },
+    {
+      "name": "Liver Gomes",
+      "role": "Vice-President",
+      "country": "Cabo Verde",
+      "continent": "Africa",
+      "photo": ""
+    },
+    {
+      "name": "Nelito Ekukui",
+      "role": "Vice-President",
+      "country": "Angola",
+      "continent": "Africa",
+      "photo": ""
+    },
+    {
+      "name": "Sok Soken",
+      "role": "Vice-President",
+      "country": "Cambodia",
+      "continent": "Asia",
+      "photo": ""
+    },
+    {
+      "name": "Bruna Tarazi",
+      "role": "Vice-President",
+      "country": "Lebanon",
+      "continent": "Asia",
+      "photo": ""
+    },
+    {
+      "name": "Lilit Beglaryan",
+      "role": "Vice-President",
+      "country": "Armenia",
+      "continent": "Asia",
+      "photo": ""
+    }
   ]
 }

@@ -1,53 +1,73 @@
 {
-  "_help": "Resolutions, statements and projects. Put the PDF in documents/ and write its file name in 'file'. type: Statement | Resolution | Project. Optional 'date_label' replaces the displayed date (e.g. 'Second semester 2025').",
+  "_help": "Resolutions, statements and projects. Put the PDF in documents/ and write its file name in 'file'. Optional 'cover': a JPG of the first page in documents/covers/ (shown as the preview). type: Statement | Resolution | Project. Optional 'date_label' replaces the displayed date.",
   "items": [
     {
-      "title": "YCDI Statement Regarding the Border Armed Conflict Between Cambodia and Thailand",
+      "title": "YCDI Masterclass 2027",
+      "type": "Project",
+      "date": "2027-04",
+      "date_label": "April 2027 · San Marino",
+      "region": "Europe",
+      "countries": [
+        "SMR"
+      ],
+      "summary": "Three days of leadership training in the Republic of San Marino for young political leaders of the IDC-CDI network and allied organizations, with experienced mentors, focused on strategic decision-making, effective policy design and democratic values.",
+      "file": "ycdi-masterclass-san-marino-2027.pdf",
+      "cover": "ycdi-masterclass-san-marino-2027.jpg",
+      "sample": false
+    },
+    {
+      "title": "Statement Regarding the Border Armed Conflict Between Cambodia and Thailand",
       "type": "Statement",
-      "date": "2025-08",
+      "date": "2025-08-21",
       "region": "Asia",
       "countries": [
         "KHM",
         "THA"
       ],
-      "summary": "The YCDI follows the developments in the Cambodian-Thai border conflict, in line with the democratic values of the IDC-CDI and the principles of the United Nations and ASEAN Charters, and welcomes the ceasefire agreements reached in July and August 2025.",
-      "file": "",
+      "summary": "The YCDI welcomes the ceasefire agreements of July and August 2025, supports the role of ASEAN in restoring peace, calls for immediate humanitarian assistance for affected civilians and urges both countries to uphold the ceasefire and international law.",
+      "file": "2025-08-21-statement-cambodia-thailand.pdf",
+      "cover": "2025-08-21-statement-cambodia-thailand.jpg",
       "sample": false
     },
     {
-      "title": "YCDI Statement on Miguel Uribe Turbay (Colombia)",
-      "type": "Statement",
-      "date": "2025-06",
-      "region": "Americas",
-      "countries": [
-        "COL"
-      ],
-      "summary": "The YCDI strongly condemns the attack against Senator and presidential pre-candidate Miguel Uribe Turbay in Colombia, a grave assault on democracy and political freedom in the country.",
-      "file": "",
-      "sample": false
-    },
-    {
-      "title": "\"Venezuela in Democracy\" Project",
+      "title": "Venezuela in Democracy Project",
       "type": "Project",
       "date": "2025-07",
+      "date_label": "Second semester 2025",
       "region": "Americas",
       "countries": [
         "VEN"
       ],
-      "summary": "Second semester 2025 project, sponsored with the Fundación Mariano Ospina Pérez.",
-      "file": "",
-      "sample": false,
-      "date_label": "Second semester 2025"
+      "summary": "An initiative of the YCDI and the Mariano Ospina Pérez Foundation to strengthen the political leadership and defend the political rights of young Venezuelans in exile, amplifying their voices in the international debate.",
+      "file": "2025-venezuela-in-democracy-project.pdf",
+      "cover": "2025-venezuela-in-democracy-project.jpg",
+      "sample": false
     },
     {
-      "title": "Resolution title",
-      "type": "Resolution",
-      "date": "2026-10",
-      "region": "Global",
-      "countries": [],
-      "summary": "Example entry. Replace with a one or two sentence summary of the resolution.",
-      "file": "",
-      "sample": true
+      "title": "Statement Regarding the Attack Against Presidential Pre-candidate Miguel Uribe Turbay",
+      "type": "Statement",
+      "date": "2025-06-09",
+      "region": "Americas",
+      "countries": [
+        "COL"
+      ],
+      "summary": "The YCDI strongly condemns the attack against Senator and presidential pre-candidate Miguel Uribe Turbay, calls for a thorough investigation and rejects all forms of political violence in Colombia.",
+      "file": "2025-06-09-statement-miguel-uribe-turbay.pdf",
+      "cover": "2025-06-09-statement-miguel-uribe-turbay.jpg",
+      "sample": false
+    },
+    {
+      "title": "Statement of Solidarity for Venezuela",
+      "type": "Statement",
+      "date": "2025-01-13",
+      "region": "Americas",
+      "countries": [
+        "VEN"
+      ],
+      "summary": "The YCDI stands in solidarity with the Venezuelan people, recognizes Edmundo González Urrutia as the lawful president-elect and expresses its concern for the democratic youth of Venezuela facing repression and exile.",
+      "file": "2025-01-13-statement-solidarity-venezuela.pdf",
+      "cover": "2025-01-13-statement-solidarity-venezuela.jpg",
+      "sample": false
     }
   ]
 }

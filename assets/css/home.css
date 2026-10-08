@@ -53,7 +53,13 @@
 @media (max-width: 700px) { .events { grid-auto-columns: 86%; } }
 
 /* Board */
-.board { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 48px 32px; }
+.board { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 40px 32px; }
+.board-group { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 24px 48px; padding: 40px 0; border-top: 1px solid var(--linea); }
+.board-group:first-child { border-top: var(--filete) solid var(--azul-medio); }
+.board-group__label { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--azul-medio); padding-top: 4px; }
+.board--lead { grid-template-columns: repeat(auto-fill, minmax(220px, 260px)); }
+@media (max-width: 900px) { .board-group { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .board { grid-template-columns: 1fr 1fr; gap: 32px 16px; } .board--lead { grid-template-columns: 1fr 1fr; } .member__initials { font-size: 32px; } .member h3 { font-size: 16px; } }
 .member { text-align: left; }
 .member__photo {
   width: 100%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; position: relative;
