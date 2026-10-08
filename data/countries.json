@@ -1,0 +1,632 @@
+{
+  "_help": "Country data for the State of Democracy Observatory. Keys are ISO 3166-1 alpha-3 codes (COL, ESP, MEX...). Any country not listed here still appears on the map with 'No data yet'. Set \"sample\": false once the values are real and verified. Values below are FICTITIOUS EXAMPLES.",
+  "updated": "2026-10-08",
+  "sources": [
+    {
+      "name": "V-Dem Institute — Democracy Report / Liberal Democracy Index",
+      "url": "https://www.v-dem.net/"
+    },
+    {
+      "name": "International IDEA — Global State of Democracy Indices",
+      "url": "https://www.idea.int/gsod-indices/"
+    },
+    {
+      "name": "Freedom House — Freedom in the World",
+      "url": "https://freedomhouse.org/report/freedom-world"
+    },
+    {
+      "name": "Inter-Parliamentary Union — Youth participation in national parliaments",
+      "url": "https://www.ipu.org/youth"
+    }
+  ],
+  "countries": {
+    "COL": {
+      "name": "Colombia",
+      "region": "Americas",
+      "sample": true,
+      "democracy": {
+        "index": 0.38,
+        "category": "Electoral autocracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Partly Free",
+        "score": 38,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 1.3,
+        "mps_under_40_pct": 24.3,
+        "min_candidacy_age": 18,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Local",
+          "date": "2026-06"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "ESP": {
+      "name": "Spain",
+      "region": "Europe",
+      "sample": true,
+      "democracy": {
+        "index": 0.56,
+        "category": "Electoral democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Partly Free",
+        "score": 56,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 5.5,
+        "mps_under_40_pct": 14.7,
+        "min_candidacy_age": 18,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Presidential",
+          "date": "2027-02"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "VEN": {
+      "name": "Venezuela",
+      "region": "Americas",
+      "sample": true,
+      "democracy": {
+        "index": 0.32,
+        "category": "Electoral autocracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Not Free",
+        "score": 32,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 3.5,
+        "mps_under_40_pct": 11.3,
+        "min_candidacy_age": 25,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Legislative",
+          "date": "2026-11"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "MEX": {
+      "name": "Mexico",
+      "region": "Americas",
+      "sample": true,
+      "democracy": {
+        "index": 0.59,
+        "category": "Electoral democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Partly Free",
+        "score": 59,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 5.7,
+        "mps_under_40_pct": 22.7,
+        "min_candidacy_age": 21,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Legislative",
+          "date": "2026-01"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "BRA": {
+      "name": "Brazil",
+      "region": "Americas",
+      "sample": true,
+      "democracy": {
+        "index": 0.54,
+        "category": "Electoral democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Partly Free",
+        "score": 54,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 1.2,
+        "mps_under_40_pct": 19.2,
+        "min_candidacy_age": 25,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Legislative",
+          "date": "2028-05"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "PAN": {
+      "name": "Panama",
+      "region": "Americas",
+      "sample": true,
+      "democracy": {
+        "index": 0.54,
+        "category": "Electoral democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Partly Free",
+        "score": 54,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 4.3,
+        "mps_under_40_pct": 12.3,
+        "min_candidacy_age": 25,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Local",
+          "date": "2026-06"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "HUN": {
+      "name": "Hungary",
+      "region": "Europe",
+      "sample": true,
+      "democracy": {
+        "index": 0.22,
+        "category": "Closed autocracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Not Free",
+        "score": 22,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 4.4,
+        "mps_under_40_pct": 22.4,
+        "min_candidacy_age": 25,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Legislative",
+          "date": "2027-11"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "SMR": {
+      "name": "San Marino",
+      "region": "Europe",
+      "sample": true,
+      "democracy": {
+        "index": 0.52,
+        "category": "Electoral democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Partly Free",
+        "score": 52,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 4.8,
+        "mps_under_40_pct": 20.2,
+        "min_candidacy_age": 21,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Presidential",
+          "date": "2027-04"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "IDN": {
+      "name": "Indonesia",
+      "region": "Asia",
+      "sample": true,
+      "democracy": {
+        "index": 0.71,
+        "category": "Liberal democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Free",
+        "score": 71,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 4.3,
+        "mps_under_40_pct": 15.4,
+        "min_candidacy_age": 25,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Presidential",
+          "date": "2028-08"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "CPV": {
+      "name": "Cabo Verde",
+      "region": "Africa",
+      "sample": true,
+      "democracy": {
+        "index": 0.76,
+        "category": "Liberal democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Free",
+        "score": 76,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 4.5,
+        "mps_under_40_pct": 16.3,
+        "min_candidacy_age": 18,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Legislative",
+          "date": "2028-07"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "MAR": {
+      "name": "Morocco",
+      "region": "Africa",
+      "sample": true,
+      "democracy": {
+        "index": 0.27,
+        "category": "Electoral autocracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Not Free",
+        "score": 27,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 2.4,
+        "mps_under_40_pct": 30.5,
+        "min_candidacy_age": 21,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Legislative",
+          "date": "2028-02"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "KHM": {
+      "name": "Cambodia",
+      "region": "Asia",
+      "sample": true,
+      "democracy": {
+        "index": 0.69,
+        "category": "Electoral democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Free",
+        "score": 69,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 3.7,
+        "mps_under_40_pct": 29.3,
+        "min_candidacy_age": 21,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Presidential",
+          "date": "2028-06"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "AGO": {
+      "name": "Angola",
+      "region": "Africa",
+      "sample": true,
+      "democracy": {
+        "index": 0.57,
+        "category": "Electoral democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Partly Free",
+        "score": 56,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 3.7,
+        "mps_under_40_pct": 20.0,
+        "min_candidacy_age": 18,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Presidential",
+          "date": "2027-12"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "DEU": {
+      "name": "Germany",
+      "region": "Europe",
+      "sample": true,
+      "democracy": {
+        "index": 0.61,
+        "category": "Electoral democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Free",
+        "score": 61,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 0.8,
+        "mps_under_40_pct": 25.4,
+        "min_candidacy_age": 25,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Local",
+          "date": "2028-08"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "SVK": {
+      "name": "Slovakia",
+      "region": "Europe",
+      "sample": true,
+      "democracy": {
+        "index": 0.35,
+        "category": "Electoral autocracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Not Free",
+        "score": 35,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 2.6,
+        "mps_under_40_pct": 24.7,
+        "min_candidacy_age": 18,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Presidential",
+          "date": "2027-03"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    },
+    "MNE": {
+      "name": "Montenegro",
+      "region": "Europe",
+      "sample": true,
+      "democracy": {
+        "index": 0.58,
+        "category": "Electoral democracy",
+        "source": "V-Dem Liberal Democracy Index (0–1)",
+        "year": 2025
+      },
+      "freedom": {
+        "status": "Partly Free",
+        "score": 57,
+        "source": "Freedom House, Freedom in the World (0–100)",
+        "year": 2025
+      },
+      "youth": {
+        "mps_under_30_pct": 3.2,
+        "mps_under_40_pct": 14.8,
+        "min_candidacy_age": 21,
+        "voting_age": 18,
+        "source": "IPU, Youth participation in national parliaments",
+        "year": 2025
+      },
+      "elections": [
+        {
+          "type": "Legislative",
+          "date": "2028-04"
+        }
+      ],
+      "members": [
+        {
+          "party": "Member party name",
+          "youth_wing": "Youth organization name"
+        }
+      ],
+      "summary": "Example text. Replace with two or three sentences on the current state of democracy and youth political participation in this country."
+    }
+  }
+}

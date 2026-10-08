@@ -1,0 +1,18 @@
+{
+  "_help": "Board of the YCDI. To add a photo, upload a square image (min. 600x600 px) to assets/img/board/ and write its file name in \"photo\". Order in this list = order on the page.",
+  "members": [
+    { "name": "Carlo Angrisano",   "role": "President",           "country": "Spain",      "photo": "" },
+    { "name": "Carlos Holguín",    "role": "Secretary General",   "country": "Colombia",   "photo": "" },
+    { "name": "Zala Tomašič",      "role": "Vice President",      "country": "Slovakia",   "photo": "" },
+    { "name": "Michael Dust",      "role": "Vice President",      "country": "Germany",    "photo": "" },
+    { "name": "Marwa El Ansari",   "role": "Vice President",      "country": "Morocco",    "photo": "" },
+    { "name": "Sok Soken",         "role": "Vice President",      "country": "Cambodia",   "photo": "" },
+    { "name": "Lohannyz Gaitán",   "role": "Vice President",      "country": "Panama",     "photo": "" },
+    { "name": "Manuel da Costa",   "role": "Vice President",      "country": "Angola",     "photo": "" },
+    { "name": "Barbara Hegedűs",   "role": "Vice President",      "country": "Hungary",    "photo": "" },
+    { "name": "Lorenzo Bugli",     "role": "Vice President",      "country": "San Marino", "photo": "" },
+    { "name": "Anggia Ermarini",   "role": "Vice President",      "country": "Indonesia",  "photo": "" },
+    { "name": "Vander Gomes",      "role": "Vice President",      "country": "Cabo Verde", "photo": "" },
+    { "name": "Name to be confirmed", "role": "Vice President",   "country": "Mexico",     "photo": "" }
+  ]
+}

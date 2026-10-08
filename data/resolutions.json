@@ -1,0 +1,53 @@
+{
+  "_help": "Resolutions, statements and projects. Put the PDF in documents/ and write its file name in 'file'. type: Statement | Resolution | Project. Optional 'date_label' replaces the displayed date (e.g. 'Second semester 2025').",
+  "items": [
+    {
+      "title": "YCDI Statement Regarding the Border Armed Conflict Between Cambodia and Thailand",
+      "type": "Statement",
+      "date": "2025-08",
+      "region": "Asia",
+      "countries": [
+        "KHM",
+        "THA"
+      ],
+      "summary": "The YCDI follows the developments in the Cambodian-Thai border conflict, in line with the democratic values of the IDC-CDI and the principles of the United Nations and ASEAN Charters, and welcomes the ceasefire agreements reached in July and August 2025.",
+      "file": "",
+      "sample": false
+    },
+    {
+      "title": "YCDI Statement on Miguel Uribe Turbay (Colombia)",
+      "type": "Statement",
+      "date": "2025-06",
+      "region": "Americas",
+      "countries": [
+        "COL"
+      ],
+      "summary": "The YCDI strongly condemns the attack against Senator and presidential pre-candidate Miguel Uribe Turbay in Colombia, a grave assault on democracy and political freedom in the country.",
+      "file": "",
+      "sample": false
+    },
+    {
+      "title": "\"Venezuela in Democracy\" Project",
+      "type": "Project",
+      "date": "2025-07",
+      "region": "Americas",
+      "countries": [
+        "VEN"
+      ],
+      "summary": "Second semester 2025 project, sponsored with the Fundación Mariano Ospina Pérez.",
+      "file": "",
+      "sample": false,
+      "date_label": "Second semester 2025"
+    },
+    {
+      "title": "Resolution title",
+      "type": "Resolution",
+      "date": "2026-10",
+      "region": "Global",
+      "countries": [],
+      "summary": "Example entry. Replace with a one or two sentence summary of the resolution.",
+      "file": "",
+      "sample": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "_help": "YCDI Around the World. Newest first. Photos go in assets/img/events/ (landscape, min. 1600x1000 px). Set \"sample\": false once the entry is real.",
+  "events": [
+    {
+      "title": "YCDI participates in the IDC-CDI General Assembly in São Paulo",
+      "date": "November 2025",
+      "place": "São Paulo, Brazil",
+      "summary": "The YCDI accompanied the IDC-CDI General Assembly in São Paulo, congratulating President Andrés Pastrana and Secretary General Antonio López-Istúriz on their re-election. The YCDI welcomes the inclusion of Brazil's Partido Social Democrático (PSD), Venezuela's Convergencia, and Europa Now of Montenegro.",
+      "photo": "",
+      "link": "",
+      "sample": false
+    },
+    {
+      "title": "YCDI Leadership School",
+      "date": "Date to be confirmed",
+      "place": "San Marino",
+      "summary": "Example entry. Replace with a short summary (2–3 sentences) of the event, the delegations that took part and its main outcome.",
+      "photo": "",
+      "link": "",
+      "sample": true
+    },
+    {
+      "title": "Event title",
+      "date": "Month Year",
+      "place": "City, Country",
+      "summary": "Example entry. Replace with a short summary of the event.",
+      "photo": "",
+      "link": "",
+      "sample": true
+    }
+  ]
+}

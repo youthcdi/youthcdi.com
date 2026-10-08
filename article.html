@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Article — State of Democracy Observatory — YCDI</title>
+  <meta name="theme-color" content="#0B2559">
+  <link rel="icon" href="assets/logos/ycdi-isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/observatory.css">
+</head>
+<body data-page="observatory">
+  <header data-site-header></header>
+  <main id="main">
+    <section class="hero hero--compact obs-hero article-hero on-blue" style="min-height:auto">
+      <img class="flame-mark" src="assets/logos/ycdi-isotipo-blanco.svg" alt="" aria-hidden="true">
+      <div class="wrap hero__grid">
+        <a class="antetitulo" href="observatory.html#articles" style="color:rgba(255,255,255,.85)">State of Democracy Observatory</a>
+        <h1 class="display" id="a-title">Loading…</h1>
+        <div class="hero__rule" style="background:rgba(255,255,255,.3)"></div>
+        <div class="article-meta" id="a-meta"></div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:72px">
+      <div class="wrap">
+        <article class="prose" id="a-body"></article>
+        <div class="article-foot">
+          <a class="btn btn--ghost" href="observatory.html#articles">← All articles</a>
+          <a class="btn" href="observatory.html" id="a-map">Explore the map <span data-icon="arrow"></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer data-site-footer></footer>
+
+  <script src="assets/vendor/marked.min.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    const slug = new URLSearchParams(location.search).get("a");
+    const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const fmt = d => { const [y, m, day] = String(d).split("-"); return [day ? +day : "", m ? MONTHS[+m - 1] : "", y].filter(Boolean).join(" "); };
+    const fail = msg => { document.getElementById("a-title").textContent = "Article not found"; document.getElementById("a-body").innerHTML = `<p>${msg}</p>`; };
+    try {
+      const { articles } = await (await fetch("data/articles.json", { cache: "no-cache" })).json();
+      const a = articles.find(x => x.slug === slug);
+      if (!a) return fail("This article does not exist or has been moved.");
+      document.title = `${a.title} — YCDI Observatory`;
+      document.getElementById("a-title").textContent = a.title;
+      document.getElementById("a-meta").innerHTML = `
+        <div><b>Author</b>${esc(a.author)}</div>
+        ${a.party ? `<div><b>Party</b>${esc(a.party)}</div>` : ""}
+        <div><b>Published</b>${esc(fmt(a.date))}</div>
+        ${a.topic ? `<div><b>Topic</b>${esc(a.topic)}</div>` : ""}`;
+      if (a.countries && a.countries[0]) document.getElementById("a-map").href = "observatory.html#" + a.countries[0];
+      const r = await fetch(`observatory/articles/${encodeURIComponent(a.slug)}.md`, { cache: "no-cache" });
+      if (!r.ok) return fail("The text of this article could not be loaded.");
+      document.getElementById("a-body").innerHTML = marked.parse(await r.text());
+    } catch (e) { console.error(e); fail("The article could not be loaded."); }
+  });
+  </script>
+</body>
+</html>

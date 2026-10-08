@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>State of Democracy Observatory — YCDI</title>
+  <meta name="description" content="Articles by YCDI members and country indicators on democracy and youth political participation around the world.">
+  <meta name="theme-color" content="#0B2559">
+  <link rel="icon" href="assets/logos/ycdi-isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/observatory.css">
+</head>
+<body data-page="observatory">
+  <header data-site-header></header>
+
+  <main id="main">
+    <section class="hero hero--compact obs-hero on-blue" style="min-height:auto; padding-bottom:48px">
+      <img class="flame-mark" src="assets/logos/ycdi-isotipo-blanco.svg" alt="" aria-hidden="true">
+      <div class="wrap hero__grid">
+        <span class="antetitulo reveal">YCDI Observatory</span>
+        <h1 class="display reveal" style="--d:.1s">State of Democracy Observatory</h1>
+        <p class="lead reveal" style="--d:.2s; margin:0">Analysis by the young leaders of our member parties, and key indicators on democracy and youth political participation in every country. Hover over a country to explore it; select it to read more.</p>
+      </div>
+    </section>
+
+    <!-- ===== MAP STAGE ===== -->
+    <section class="stage" aria-label="Interactive world map">
+      <div class="wrap">
+        <div class="stage__bar">
+          <div class="legend" aria-label="Map legend">
+            <span><i class="l-data"></i>Country profile available</span>
+            <span><i class="l-art"></i>Articles published</span>
+            <span><i class="l-none"></i>No data yet</span>
+          </div>
+          <div class="country-search">
+            <span data-icon="search"></span>
+            <input id="country-q" type="text" placeholder="Find a country" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="suggest" aria-label="Find a country">
+            <ul class="suggest" id="suggest" role="listbox" hidden></ul>
+          </div>
+        </div>
+        <div class="stage__grid">
+          <div class="mapbox" id="map">
+            <div class="map-ctrl">
+              <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+              <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
+              <button type="button" id="zoom-reset" aria-label="Reset view" style="font-size:13px">⟲</button>
+            </div>
+            <span class="map-hint">Drag to move · scroll or pinch to zoom</span>
+          </div>
+          <aside class="panel" id="panel" aria-live="polite"></aside>
+        </div>
+        <div class="sample-note" id="sample-note" style="margin-top:24px" hidden>
+          <span><strong>Example data.</strong> The country figures shown are fictitious placeholders that illustrate the design. They will be replaced with verified data from the sources listed below.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARTICLES ===== -->
+    <section class="section" id="articles">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="antetitulo">From our members</span>
+            <h2>Latest articles</h2>
+          </div>
+          <p class="lead reveal" style="--d:.1s">Opinion and analysis written by young leaders of YCDI member parties. The views expressed are those of the authors.</p>
+        </div>
+        <div class="art-tools">
+          <div class="chips" id="topic-chips" role="group" aria-label="Filter by topic" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+          <span class="leyenda" id="art-filter-note"></span>
+        </div>
+        <div class="art-grid" id="art-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== SUBMIT ===== -->
+    <section class="section section--blue" style="padding: 72px 0">
+      <div class="wrap submit">
+        <div class="reveal">
+          <span class="antetitulo light">Write for the Observatory</span>
+          <h2 style="margin-top:16px">Are you a member of a YCDI youth organization?</h2>
+          <p class="lead" style="margin:16px 0 0">Send us your article on the state of democracy or youth participation in your country.</p>
+        </div>
+        <a class="btn btn--light reveal" id="submit-btn" href="#">Submit an article <span data-icon="arrow"></span></a>
+      </div>
+    </section>
+
+    <!-- ===== METHOD ===== -->
+    <section class="section section--alt" id="sources">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="reveal">
+            <span class="antetitulo">Methodology</span>
+            <h2>Indicators and sources</h2>
+          </div>
+          <p class="lead reveal" style="--d:.1s">Each country profile combines independent international indicators. The map itself is neutral: it shows where information is available, not a ranking.</p>
+        </div>
+        <div class="method" id="method"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-site-footer></footer>
+  <div class="tip" id="tip" role="tooltip"></div>
+
+  <script src="assets/vendor/d3.min.js"></script>
+  <script src="assets/vendor/topojson-client.min.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/observatory.js"></script>
+</body>
+</html>
