@@ -16,7 +16,7 @@
       const { events } = await getJSON("data/events.json");
       box.innerHTML = events.map((e, i) => `
         <article class="event reveal" style="--d:${i * 0.08}s">
-          <div class="ph">${e.photo ? `<img src="assets/img/events/${esc(e.photo)}" alt="${esc(e.title)}" loading="lazy">` : `<span>Event photo</span>`}</div>
+          <div class="ph${e.fit === "contain" ? " ph--contain" : ""}">${e.photo ? `<img src="assets/img/events/${esc(e.photo)}" alt="${esc(e.title)}" loading="lazy">` : `<span>Event photo</span>`}</div>
           <div class="event__body">
             <div class="event__meta">
               <span>${ICONS.pin}${esc(e.place)}</span><span>${esc(e.date)}</span>

@@ -96,3 +96,9 @@
 .contact-line svg { width: 18px; height: 18px; }
 @media (max-width: 900px) { .newsletter { grid-template-columns: 1fr; } }
 .hero__intro > .btn { justify-self: start; }
+
+.event .ph--contain { background: #F1F3F6; }
+.event .ph--contain::before { display: none; }
+.event .ph--contain img { object-fit: contain; }
+.event h3 { font-size: 20px; }
+.event { scroll-snap-align: start; }

@@ -1,32 +1,51 @@
 {
-  "_help": "YCDI Around the World. Newest first. Photos go in assets/img/events/ (landscape, min. 1600x1000 px). Set \"sample\": false once the entry is real.",
+  "_help": "YCDI Around the World. Newest first. Photos go in assets/img/events/ (landscape, min. 1600x1000 px). Optional \"fit\": \"contain\" shows the whole image without cropping (useful for posters or square images).",
   "events": [
     {
-      "title": "YCDI participates in the IDC-CDI General Assembly in São Paulo",
+      "title": "Youth of the CDI (YCDI) Participate in the IDC-CDI General Assembly in São Paulo (Brazil, 2025)",
       "date": "November 2025",
       "place": "São Paulo, Brazil",
-      "summary": "The YCDI accompanied the IDC-CDI General Assembly in São Paulo, congratulating President Andrés Pastrana and Secretary General Antonio López-Istúriz on their re-election. The YCDI welcomes the inclusion of Brazil's Partido Social Democrático (PSD), Venezuela's Convergencia, and Europa Now of Montenegro.",
-      "photo": "",
+      "summary": "The YCDI accompanied the IDC-CDI General Assembly in São Paulo, congratulating President Andrés Pastrana and Secretary General Antonio López-Istúriz on their re-election. The YCDI welcomes the inclusion of Brazil’s Partido Social Democrático (PSD), Venezuela’s Convergencia, and Europa Now of Montenegro.",
+      "photo": "2025-idc-cdi-general-assembly-sao-paulo.jpg",
       "link": "",
       "sample": false
     },
     {
-      "title": "YCDI Leadership School",
-      "date": "Date to be confirmed",
-      "place": "San Marino",
-      "summary": "Example entry. Replace with a short summary (2–3 sentences) of the event, the delegations that took part and its main outcome.",
-      "photo": "",
+      "title": "Youth Panel on the Peace Charter: For People and the Planet (Cambodia 2024)",
+      "date": "2024",
+      "place": "Siem Reap, Cambodia",
+      "summary": "The YCDI and the Cambodian People's Party launch the Youth Forum on the Peace Charter: For People and the Planet, bringing together international experts from the ASEAN region to discuss the key challenges to peace and stability in Southeast Asia.",
+      "photo": "2024-forum-ycdi-cambodia.jpg",
       "link": "",
-      "sample": true
+      "sample": false
     },
     {
-      "title": "Event title",
-      "date": "Month Year",
-      "place": "City, Country",
-      "summary": "Example entry. Replace with a short summary of the event.",
-      "photo": "",
+      "title": "The YCDI participates in the 6th Summer University (VI Universidade de Verão), organized by Juventude para a Democracia in Cidade Velha, Cabo Verde.",
+      "date": "October 2024",
+      "place": "Cidade Velha, Cabo Verde",
+      "summary": "Carlos Holguín, Secretary General of the YCDI, participated as a guest speaker at the 6th edition of the Universidade de Verão, organized by Cabo Verde’s Movimento para a Democracia, where he presented an overview of the state of youth political movements worldwide and their role in shaping a sustainable future for all.",
+      "photo": "2024-cabo-verde-ycdi.jpg",
+      "fit": "contain",
       "link": "",
-      "sample": true
+      "sample": false
+    },
+    {
+      "title": "The YCDI Participates in the International Political Party Organizations Summit in Skopje, North Macedonia (2024)",
+      "date": "2024",
+      "place": "Skopje, North Macedonia",
+      "summary": "The YCDI participated in the International Political Party Organizations Summit, organized by the National Democratic Institute (NDI) in Skopje, North Macedonia. The summit brought together representatives of international political organizations for leadership workshops, discussions aimed at building consensus on shared priorities, and high-level meetings with government officials from North Macedonia.",
+      "photo": "2024-skopje-ycdi.jpg",
+      "link": "",
+      "sample": false
+    },
+    {
+      "title": "The YCDI Is Officially Re-launched in Rome, Italy (2019)",
+      "date": "2019",
+      "place": "Rome, Italy",
+      "summary": "The Youth of the Centrist Democrat International (YCDI), the youth organization of the Centrist Democrat International (IDC-CDI), was officially re-launched in Rome, Italy, in 2019. The event marked the beginning of a new platform for international cooperation among young political leaders, aimed at strengthening democratic values, fostering dialogue across countries and regions, and promoting youth participation in political decision-making worldwide.",
+      "photo": "2019-launch-ycdi-rome.jpg",
+      "link": "",
+      "sample": false
     }
   ]
 }
