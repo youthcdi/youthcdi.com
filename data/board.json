@@ -6,14 +6,14 @@
       "role": "President",
       "country": "San Marino",
       "continent": "Europe",
-      "photo": ""
+      "photo": "lorenzo-bugli.jpg"
     },
     {
       "name": "Carlos Holguín",
       "role": "Secretary General",
       "country": "Colombia",
       "continent": "America",
-      "photo": ""
+      "photo": "carlos-holguin.jpg"
     },
     {
       "name": "Johannes Volkmann",
@@ -23,74 +23,74 @@
       "photo": ""
     },
     {
-      "name": "Gonzalo Gómez",
+      "name": "Gonzalo Martín",
       "role": "Vice-President",
       "country": "Spain",
       "continent": "Europe",
-      "photo": ""
+      "photo": "gonzalo-martin.jpg"
     },
     {
       "name": "Matilde Pacheco",
       "role": "Vice-President",
       "country": "Portugal",
       "continent": "Europe",
-      "photo": ""
+      "photo": "matilde-pacheco.jpg"
     },
     {
       "name": "Jesús Pilieri",
       "role": "Vice-President",
       "country": "Venezuela",
       "continent": "America",
-      "photo": ""
+      "photo": "jesus-pilieri.jpg"
     },
     {
       "name": "Pilar Brown",
       "role": "Vice-President",
       "country": "Argentina",
       "continent": "America",
-      "photo": ""
+      "photo": "pilar-brown.jpg"
     },
     {
       "name": "Daniela Aguilar",
       "role": "Vice-President",
       "country": "México",
       "continent": "America",
-      "photo": ""
+      "photo": "daniela-aguilar.jpg"
     },
     {
-      "name": "Liver Gomes",
+      "name": "Edson Liver Gomes",
       "role": "Vice-President",
       "country": "Cabo Verde",
       "continent": "Africa",
-      "photo": ""
+      "photo": "edson-liver-gomes.jpg"
     },
     {
-      "name": "Nelito Ekukui",
+      "name": "Manuel Armando da Costa Ekuikui",
       "role": "Vice-President",
       "country": "Angola",
       "continent": "Africa",
-      "photo": ""
+      "photo": "manuel-da-costa-ekuikui.jpg"
     },
     {
       "name": "Sok Soken",
       "role": "Vice-President",
       "country": "Cambodia",
       "continent": "Asia",
-      "photo": ""
+      "photo": "sok-soken.jpg"
     },
     {
       "name": "Bruna Tarazi",
       "role": "Vice-President",
       "country": "Lebanon",
       "continent": "Asia",
-      "photo": ""
+      "photo": "bruna-tarazi.jpg"
     },
     {
       "name": "Lilit Beglaryan",
       "role": "Vice-President",
       "country": "Armenia",
       "continent": "Asia",
-      "photo": ""
+      "photo": "lilit-beglaryan.jpg"
     }
   ]
 }
